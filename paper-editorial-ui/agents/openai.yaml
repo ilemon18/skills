@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Editorial UI"
+  short_description: "Hard-edge paper/ink visual system for React + Tailwind sites"
+  default_prompt: "Use $paper-editorial-ui to build or restyle this site with the paper/ink editorial system, reusing the token layer and the starter architecture."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Copy Minimalism"
+  short_description: "Strip redundant UI labels and descriptions; let layout explain"
+  default_prompt: "Use $ui-copy-minimalism to trim this interface copy down to what users need to understand, decide, and act."

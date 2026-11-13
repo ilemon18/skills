@@ -1,0 +1,92 @@
+/**
+ * 设计令牌层 / Design tokens
+ * ---------------------------------------------------------------
+ * 数值全部取自 https://www.initapi.ai 的线上样式表（:root 与 .dark 两组），
+ * 布局与区块色彩一律引用这些变量；交互按钮的墨/纸反相取值沿用原站写法，
+ * 以保持 hover/active 状态与线上完全一致。
+ *
+ * 命名沿用原站的 `--paper-*` 前缀，方便与线上 CSS 逐行对照。
+ * 主题切换靠 html.dark 上的类名（见 src/theme/ThemeProvider.tsx）。
+ */
+
+/* ---- 亮色（纸感）主题 ---- */
+:root {
+  /* 灰度三元组，供 Tailwind 的 rgb(var(--paper-gray-500) / <alpha-value>) 使用 */
+  --paper-gray-300: 170 180 197;
+  --paper-gray-400: 98 109 128;
+  --paper-gray-500: 92 100 116;
+
+  /* 页面纸面 */
+  --paper: #f4f2ec;
+  --paper-surface: #fffdf8;
+  --paper-tint: #eeece6;
+  --paper-hover: #f4f2ec;
+
+  /* 墨色与描边 */
+  --paper-ink: #0b1020;
+  --paper-muted: rgb(var(--paper-gray-500) / 1);
+  --paper-line: #cdd1da;
+  --paper-blue: #5c6474;
+  --paper-danger: #c33f38;
+
+  /* 32px 网格底纹 */
+  --paper-grid: rgba(11, 16, 32, 0.025);
+
+  /* 表格表头（反相） */
+  --paper-table-head: #0b1020;
+  --paper-table-text: #fffdf8;
+
+  /* 图表色板 1–12 */
+  --paper-chart-1: #5c6474;
+  --paper-chart-2: #527460;
+  --paper-chart-3: #8b754c;
+  --paper-chart-4: #617986;
+  --paper-chart-5: #7d7189;
+  --paper-chart-6: #9b7569;
+  --paper-chart-7: #687083;
+  --paper-chart-8: #5269a5;
+  --paper-chart-9: #658354;
+  --paper-chart-10: #947255;
+  --paper-chart-11: #7e6681;
+  --paper-chart-12: #42746f;
+
+  color-scheme: light;
+}
+
+/* ---- 暗色主题 ---- */
+.dark {
+  --paper-gray-300: 205 209 218;
+  --paper-gray-400: 170 180 197;
+  --paper-gray-500: 141 153 173;
+
+  --paper: #141923;
+  --paper-surface: #1c2330;
+  --paper-tint: #080c17;
+  --paper-hover: #171e2a;
+
+  --paper-ink: #edf0f7;
+  --paper-muted: #aab4c5;
+  --paper-line: #3c4658;
+  --paper-blue: #9199a5;
+  --paper-danger: #d9958f;
+
+  --paper-grid: rgba(230, 235, 250, 0.035);
+
+  --paper-table-head: #0d111a;
+  --paper-table-text: #edf0f7;
+
+  --paper-chart-1: #9199a5;
+  --paper-chart-2: #a2b5a9;
+  --paper-chart-3: #bdaf94;
+  --paper-chart-4: #a0b2bb;
+  --paper-chart-5: #b1a6be;
+  --paper-chart-6: #c6a69c;
+  --paper-chart-7: #aab4c5;
+  --paper-chart-8: #93a7df;
+  --paper-chart-9: #acc58c;
+  --paper-chart-10: #c8a483;
+  --paper-chart-11: #ba9cbf;
+  --paper-chart-12: #8fbfb7;
+
+  color-scheme: dark;
+}

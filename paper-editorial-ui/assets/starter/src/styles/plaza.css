@@ -1,0 +1,64 @@
+.plaza-tag {
+  border: 1px solid var(--paper-line);
+  padding: 2px 6px;
+  font: 10px/1.6 ui-monospace, monospace;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.plaza-platform {
+  border: 1px solid var(--paper-ink);
+  padding: 2px 7px;
+  font: 10px/1.7 ui-monospace, monospace;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.plaza-card {
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.plaza-card:hover {
+  transform: translate(-1px, -2px);
+  box-shadow: 4px 4px 0 var(--paper-line);
+}
+
+.plaza-filter-chip {
+  border: 1px solid var(--paper-line);
+  padding: 4px 10px;
+  font-size: 12px;
+  line-height: 1.6;
+  background: transparent;
+  transition:
+    background-color 0.16s ease,
+    color 0.16s ease,
+    border-color 0.16s ease;
+}
+
+.plaza-filter-chip:hover {
+  border-color: var(--paper-ink);
+}
+
+.plaza-filter-chip[data-active='true'] {
+  background: var(--paper-ink);
+  color: var(--paper-surface);
+  border-color: var(--paper-ink);
+}
+
+.plaza-filter-chip:focus-visible {
+  outline: 2px solid var(--paper-ink);
+  outline-offset: 3px;
+}
+
+.plaza-price-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--paper-line);
+}
+
+.plaza-price-row > div + div {
+  border-left: 1px solid var(--paper-line);
+  padding-left: 14px;
+}

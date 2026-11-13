@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Commit Message"
+  short_description: "Generate a copy-ready commit message from uncommitted changes"
+  default_prompt: "Use $git-commit-msg to write a commit message for my uncommitted changes."
